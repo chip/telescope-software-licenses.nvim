@@ -3,7 +3,19 @@
 ![telescope-software-licenses.nvim DEMO](assets/telescope-software-licenses.gif "telescope-software-licenses.nvim DEMO")
 
 This [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
-extension 
+extension allows you to view common software licenses and paste them into a buffer.
+
+Currently supports the following licenses:
+* [gpl-1.0: GNU General Public License (GPL)](https://www.gnu.org/licenses/gpl-1.0.html)
+* [gpl-2.0: GNU General Public License (GPL)](https://www.gnu.org/licenses/gpl-2.0.html)
+* [gpl-3.0: GNU General Public License (GPL)](https://www.gnu.org/licenses/gpl-3.0.html)
+* [lgpl-2.0: GNU Lesser General Public License (LGPL)](https://www.gnu.org/licenses/)
+* [lgpl-2.1: GNU Lesser General Public License (LGPL](https://www.gnu.org/licenses/lgpl-2.1.html)
+* [lgpl-3.0: GNU Lesser General Public License (LGPL](https://www.gnu.org/licenses/lgpl-3.0.html)
+* [agpl-3.0: GNU Affero General Public License (AGPL)](https://www.gnu.org/licenses/agpl-3.0.html)
+* [fdl-1.1: GNU Free Documentation License (FDL)](https://www.gnu.org/licenses/fdl-1.1.html)
+* [fdl-1.2: GNU Free Documentation License (FDL)](https://www.gnu.org/licenses/fdl-1.2.html)
+* [fdl-1.3: GNU Free Documentation License (FDL)](https://www.gnu.org/licenses/fdl-1.3.html)
 
 ## Requirements
 
