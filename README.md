@@ -42,14 +42,14 @@ require('telescope').load_extension('telescope-software-licenses')
 ```vim
 " Prompts user for Github user/repo
 " Prompts for file argument, but uses README.md as default
-:Telescope telescope-software-licenses list
+:Telescope software-licenses find
 ```
 
 ### Bind to Keys:
 
 ```vim
-" Replace <Leader>cf with whatever you prefer
-nnoremap <Leader>sl <cmd>Telescope telescope-software-licenses list
+" Replace <Leader>sl with whatever you prefer
+nnoremap <Leader>sl :Telescope software-licenses find<CR>
 ```
 
 ### Development
@@ -57,5 +57,5 @@ nnoremap <Leader>sl <cmd>Telescope telescope-software-licenses list
 ```zsh
 $ git clone git@github.com:chip/telescope-software-licenses.nvim.git
 $ cd telescope-software-licenses.nvim/lua/telescope/_extensions
-$ nvim --cmd "set rtp+=$(pwd)" -u plugin/dev.vim
 ```
+**See lua/telescope/_extensions/plugin/dev.vim for more info**
