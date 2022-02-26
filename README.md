@@ -57,5 +57,6 @@ nnoremap <Leader>sl :Telescope software-licenses find<CR>
 ```zsh
 $ git clone git@github.com:chip/telescope-software-licenses.nvim.git
 $ cd telescope-software-licenses.nvim/lua/telescope/_extensions
+
+**See [plugin/dev.vim](https://github.com/chip/telescope-software-licenses.nvim/blob/master/lua/telescope/_extensions/plugin/dev.vim) for details**
 ```
-**See lua/telescope/_extensions/plugin/dev.vim for more info**
