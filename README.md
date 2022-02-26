@@ -33,19 +33,19 @@ following somewhere after telescope in your configuration file (`init.vim` or
 ### Using [Paq](https://github.com/savq/paq-nvim)
 ```lua
 require "paq" {
-  'nvim-lua/plenary.nvim';
-  'nvim-telescope/telescope.nvim';
+  "nvim-lua/plenary.nvim";
+  "nvim-telescope/telescope.nvim";
   "chip/telescope-software-licenses.nvim";
 }
-require('telescope').load_extension('software-licenses');
+require("telescope").load_extension("software-licenses");
 ```
 
 ### Using [packer.nvim](https://github.com/wbthomason/packer.nvim)
 ```lua
-use 'nvim-lua/plenary.nvim'
-use 'nvim-telescope/telescope.nvim'
+use "nvim-lua/plenary.nvim"
+use "nvim-telescope/telescope.nvim"
 use "chip/telescope-software-licenses.nvim"
-require('telescope').load_extension('software-licenses')
+require("telescope").load_extension("software-licenses")
 ```
 ## Setup
 
