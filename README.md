@@ -1,6 +1,6 @@
 # telescope-software-licenses.nvim
 
-![telescope-software-licenses.nvim DEMO](assets/telescope-software-licenses.gif "telescope-software-licenses.nvim DEMO")
+![telescope-software-licenses.nvim DEMO](assets/demo.gif "telescope-software-licenses.nvim DEMO")
 
 This [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 extension allows you to view common software licenses and paste them into a buffer.
