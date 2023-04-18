@@ -1,4 +1,4 @@
-local health = require("health")
+local health = vim.health or require("health")
 local M = {}
 
 local vim_installed = function()
