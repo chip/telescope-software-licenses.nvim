@@ -6,7 +6,7 @@ This [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 extension allows you to view common software licenses and paste them into a buffer.
 
 Currently supports the following licenses:
-* [MIT: GNU General Public License (GPL)](https://mit-license.org/)
+* [MIT License/Expat License](https://mit-license.org/)
 * [gpl-1.0: GNU General Public License (GPL)](https://www.gnu.org/licenses/gpl-1.0.html)
 * [gpl-2.0: GNU General Public License (GPL)](https://www.gnu.org/licenses/gpl-2.0.html)
 * [gpl-3.0: GNU General Public License (GPL)](https://www.gnu.org/licenses/gpl-3.0.html)
