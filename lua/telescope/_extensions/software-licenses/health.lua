@@ -13,11 +13,11 @@ local vim_installed = function()
 end
 
 M.check = function()
-  health.report_start("Start health check for telescope-software-licenses.nvim")
+  health.start("Start health check for telescope-software-licenses.nvim")
   if vim_installed() then
-    health.report_ok("nvim version >= 0.6 installed")
+    health.ok("nvim version >= 0.6 installed")
   else
-    health.report_error("please install nvim > 0.6")
+    health.error("please install nvim > 0.6")
   end
 
   local packages = {"telescope", "plenary.curl"}
