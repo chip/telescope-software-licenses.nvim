@@ -2,14 +2,7 @@ local health = vim.health or require("health")
 local M = {}
 
 local vim_installed = function()
-  local vim_version = vim.version()
-  local version = tonumber(string.format("%s.%s", vim_version.major,
-                                         vim_version.minor))
-  if version >= 0.6 then
-    return true
-  else
-    return false
-  end
+  return true
 end
 
 M.check = function()
@@ -24,9 +17,9 @@ M.check = function()
   for _, package in pairs(packages) do
     local has_package, _ = pcall(require, package)
     if has_package then
-      health.report_ok(string.format("%s is installed", package))
+      health.ok(string.format("%s is installed", package))
     else
-      health.report_error(string.format("This plugin requires %s", package))
+      health.error(string.format("This plugin requires %s", package))
     end
   end
 end
