@@ -1,74 +1,64 @@
 # telescope-software-licenses.nvim
 
-![telescope-software-licenses.nvim DEMO](assets/demo.gif "telescope-software-licenses.nvim DEMO")
-
 This [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 extension allows you to view common software licenses and paste them into a buffer.
 
-Currently supports the following licenses:
-* [MIT License/Expat License](https://mit-license.org/)
-* [gpl-1.0: GNU General Public License (GPL)](https://www.gnu.org/licenses/gpl-1.0.html)
-* [gpl-2.0: GNU General Public License (GPL)](https://www.gnu.org/licenses/gpl-2.0.html)
-* [gpl-3.0: GNU General Public License (GPL)](https://www.gnu.org/licenses/gpl-3.0.html)
-* [lgpl-2.0: GNU Lesser General Public License (LGPL)](https://www.gnu.org/licenses/)
-* [lgpl-2.1: GNU Lesser General Public License (LGPL](https://www.gnu.org/licenses/lgpl-2.1.html)
-* [lgpl-3.0: GNU Lesser General Public License (LGPL](https://www.gnu.org/licenses/lgpl-3.0.html)
-* [agpl-3.0: GNU Affero General Public License (AGPL)](https://www.gnu.org/licenses/agpl-3.0.html)
-* [fdl-1.1: GNU Free Documentation License (FDL)](https://www.gnu.org/licenses/fdl-1.1.html)
-* [fdl-1.2: GNU Free Documentation License (FDL)](https://www.gnu.org/licenses/fdl-1.2.html)
-* [fdl-1.3: GNU Free Documentation License (FDL)](https://www.gnu.org/licenses/fdl-1.3.html)
+## ATTRIBUTION: https://spdx.org/licenses/
 
-## Requirements
+Currently supports hundreds of licenses via
+[spdx/license-list-data](https://github.com/spdx/license-list-data/blob/main/json/licenses.json)
+that spdx.org maintains.
+
+## Do you need assistance choosing a license?
+
+Check out [https://creativecommons.org/chooser/](https://creativecommons.org/chooser/)
+
+## DEMO
+
+![telescope-software-licenses.nvim DEMO](assets/demo.gif "telescope-software-licenses.nvim DEMO")
+
+## REQUIREMENTS
 
 - Neovim (v0.6.0)
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) (required)
-- *Only tested on MacOS 11.6.1*
+- *Only tested on MacOS 11.6.1 and Tahoe 26.2 on M2*
 
-## Install
+## INSTALL
 
 You can install the extension by using your plugin manager of choice or by
 cloning this repository somewhere on your filepath, and then adding the
-following somewhere after telescope in your configuration file (`init.vim` or
-`init.lua`).
+following somewhere after telescope in your configuration file.
 
-### Using [Paq](https://github.com/savq/paq-nvim)
+### USING [Lazy](https://lazy.folke.io)
 ```lua
-require "paq" {
-  "nvim-lua/plenary.nvim";
-  "nvim-telescope/telescope.nvim";
-  "chip/telescope-software-licenses.nvim";
-}
-require("telescope").load_extension("software-licenses");
+{
+  "chip/telescope-software-licenses.nvim",
+  dependencies = { "nvim-telescope/telescope.nvim", },
+},
 ```
 
-### Using [packer.nvim](https://github.com/wbthomason/packer.nvim)
-```lua
-use "nvim-lua/plenary.nvim"
-use "nvim-telescope/telescope.nvim"
-use "chip/telescope-software-licenses.nvim"
-require("telescope").load_extension("software-licenses")
-```
-## Setup
+## SETUP
 
-### Commands
+### COMMANDS
 
 ```vim
-" Prompts user for Github user/repo
-" Prompts for file argument, but uses README.md as default
-:Telescope software-licenses find
+:Telescope software_licenses find
 ```
 
-### Bind to Keys:
+### KEY MAPPINGS
 
 ```vim
 " Replace <Leader>sl with whatever you prefer
-nnoremap <Leader>sl :Telescope software-licenses find<CR>
+nnoremap <Leader>sl :Telescope software_licenses find<CR>
 ```
 
-### Development
+### HEALTH CHECK
 
-```zsh
-$ git clone git@github.com:chip/telescope-software-licenses.nvim.git
-$ cd telescope-software-licenses.nvim/lua/telescope/_extensions
 ```
-See [plugin/dev.vim](https://github.com/chip/telescope-software-licenses.nvim/blob/master/lua/telescope/_extensions/plugin/dev.vim) for details.
+:checkhealth software_licenses
+```
+
+Or use the default health check:
+```
+:checkhealth
+```
