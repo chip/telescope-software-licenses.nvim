@@ -3,7 +3,7 @@
 This [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 extension allows you to view common software licenses and paste them into a buffer.
 
-## Attribution for licenses: https://spdx.org/licenses/
+**Attribution for licenses:** https://spdx.org/licenses/
 
 Currently supports hundreds of licenses via
 [spdx/license-list-data](https://github.com/spdx/license-list-data/blob/main/json/licenses.json)
@@ -35,7 +35,7 @@ following somewhere after telescope in your configuration file.
 
 ## SETUP
 
-## MIGRATION WARNING
+### MIGRATION WARNING
 
 If you're upgrading to version **v2.0.0**, please note that the extension name
 was changed from `software-licenses` to `software_licenses`.
