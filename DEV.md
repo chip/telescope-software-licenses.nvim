@@ -11,4 +11,9 @@
     v ~/.config/nvim/lua/plugins/init.lua
 5. Test manually by launching vim
     :Telescope software_licnences find
-6. Commit, tag release, push up to Github.
+6. Commit, tag release, push up to Github (update ... and v2.0.2 below to suit current versions):
+    git add .
+    git commit -m "Update to version ... of the SPDX License List"
+    git tag v2.0.2
+    git push origin v2.0.2
+    gh release create v2.0.2 --repo chip/telescope-software-licenses.nvim --title "v2.0.2" --notes "" --verify-tag
